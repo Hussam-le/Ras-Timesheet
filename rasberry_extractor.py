@@ -30,7 +30,7 @@ def calc_duration(start, end):
     if not d1 or not d2:
         return "n/a"
     sec = int(abs((d2 - d1).total_seconds()))
-    mins = sec // 60
+    mins = sec // 60 
     hrs, mins = divmod(mins, 60)
     return f"{hrs} h {mins} min" if mins else f"{hrs} hours"
 
@@ -119,7 +119,7 @@ def open_browser():
         wait = WebDriverWait(driver, 15)
         urls = [
             "https://bayantech.rasberryapp.com/LERequest/LERequestListIndex",
-            "https://sawatech.rasberryapp.com/LERequest/LERequestListIndex",
+            #"https://sawatech.rasberryapp.com/LERequest/LERequestListIndex",
             "https://asialocalize.rasberryapp.com/LERequest/LERequestListIndex",
             "https://laoret.rasberryapp.com/LERequest/LERequestListIndex",
             "https://transpalm.rasberryapp.com/LERequest/LERequestListIndex"
